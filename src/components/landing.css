@@ -1,0 +1,13 @@
+
+.top{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.top h1{
+    font-weight: 250;
+}
+
+.top h4 {
+    font-weight: lighter;
+}

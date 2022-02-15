@@ -17,9 +17,9 @@ class Nav extends Component{
       
                   <div className="buttons ">
       
-                    <Link to="/order">
+                    <Link to="/signup">
                         <button className="nav-btn-order"  >
-                            Order
+                            signup
                         </button> 
                     </Link>
                       

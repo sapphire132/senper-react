@@ -1,7 +1,5 @@
 import React from 'react';
 import './order.css';
-import { useForm } from "react-hook-form";
-import isEmail from "validator/lib/isEmail";
 
 
 

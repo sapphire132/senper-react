@@ -12,13 +12,20 @@
 
 
 .item-designer{
-  font-size: 20px;
-  font-weight: lighter;
-  display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
 }
 
-.item-designer a{
-    text-decoration: none;
+.item-designer .avatar{
+    flex: 35%;
+    margin: 10px;
+}
+
+.item-designer .name{
+    flex: 65%;
+    justify-content: center;
 }
 
 .item-designer a:hover{
@@ -73,4 +80,14 @@
     max-height: 4.5cm;
     height: auto;
     box-shadow: 0px 3px 5px 1px rgba(46, 46, 46, 0.5);
+}
+
+@media (max-width: 600px) {
+
+    .item-main img{
+        max-width: 100%;
+    }
+    .item-extra-detail{
+        max-width: 95%;
+    }
 }

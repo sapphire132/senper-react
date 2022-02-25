@@ -6,13 +6,13 @@ import Products from './components/products';
 import Order from './components/order';
 import About from './components/about';
 import {BrowserRouter as Router, Route, Routes, useNavigate} from 'react-router-dom';
-import Signup from './components/signup';
 import Item from './components/item';
 import Designer from './components/designer';
 import Form from './components/form';
 
 import {app} from './firebase-config';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+import Upload from './components/upload';
 
 const App = () =>{
 
@@ -22,7 +22,7 @@ const App = () =>{
         const navigate = useNavigate();
 
         useEffect(() => {
-          let authToken = sessionStorage.getItem('Auth Token')
+          let authToken = sessionStorage.getItem('AuthToken')
       
           if (authToken) {
             navigate('/')
@@ -37,7 +37,7 @@ const App = () =>{
               createUserWithEmailAndPassword(authentication, email, password)
                 .then((response)=>{
                   navigate('/')
-                  sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
+                  sessionStorage.setItem('AuthToken', response._tokenResponse.refreshToken)
                 })
             }
 
@@ -74,13 +74,12 @@ const App = () =>{
                        setPassword={setPassword}
                    />
                      } />
-                     <Route path="/" exact element={<Landing><Products/></Landing>} />
-                     <Route path="/Products" exact element={<Products/>} />
+                     <Route path="/" exact element={<Landing></Landing>} />
                      <Route path="/design/:id" element={<Item />} />
                      <Route path="/designer/:id" element={<Designer/>} />
                      <Route path="/order" exact element={<Order/>} />
                      <Route path="/about" exact element={<About/>} />
-                     {/* <Route path="/signup" exact element={<Signup/>} /> */}
+                     <Route path="/upload" exact element={<Upload/>} />
                      <Route
       path="*"
       element={

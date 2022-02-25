@@ -28,8 +28,9 @@ const Item = () =>{
         </div>
         
         <div className="item-extra-detail">
-        <p className="item-designer">
-                    <Link 
+            <div className="item-designer">
+                <div className="avatar">
+                <Link 
                         to={`/designer/${image.designer}`} 
                         state={image}
                         sx={{
@@ -43,9 +44,12 @@ const Item = () =>{
                                     display: "inline-block"
                                 }}
                             />
-                            {/* {image.designer}  */}
-                    </Link>    
-                </p>
+                    </Link> 
+                </div>
+                <div className="name">
+                    <p>{image.designer}</p>
+                </div>
+            </div>
             <p><b>client:</b> {image.client}<br/>
             <b>Designer: </b> {image.designer} <br/>
             <b>description:</b> {image.description} </p>

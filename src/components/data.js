@@ -44,6 +44,17 @@ const designs = [
       'client':"no one"}
 ]
 
+
+export const product_arr=[
+    
+]
+
+
+
+
+
+
+
 export const getDesigners = () =>{
     return designers;
 }

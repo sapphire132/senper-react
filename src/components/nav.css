@@ -20,7 +20,6 @@
 
 .buttons{
    float: right;
-   
 }
 
 
@@ -97,3 +96,10 @@
     border-radius: 20px;
     margin: 5px 5px;
 }
+
+
+@media (max-width: 800px) {
+   .brand p{
+       display: none;
+   }
+  }

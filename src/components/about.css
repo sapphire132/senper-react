@@ -1,72 +1,72 @@
-.about{
-    width: 75%;
-    margin: auto;
-    padding: 20px;
-  }
+.about {
+  width: 55%;
+  margin: auto;
+  padding: 20px;
+}
 
-  .about-detail{
-      margin: auto;
-  }
+.about-detail {
+  margin: auto;
+}
 
-  .about-detail h1{
-      font-weight: lighter;
-      text-align: center;
-  }
+.about-detail h1 {
+  font-weight: lighter;
+  text-align: center;
+}
 
-  .about-detail hr{
-      width: 60%;
-      height: 1px;
-      background-color: #797979;
-  }
+.about-detail hr {
+  width: 60%;
+  height: 1px;
+  background-color: #797979;
+}
 
-  .about-detail p{
-        text-align: center;
-  }
+.about-detail p {
+  text-align: center;
+}
 
-  .about-designers{
-    display: flex;
-    flex-wrap: wrap;
-  }
+.about-designers {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .about-designer{
-    flex: 30%;
-    margin: 50px 10px;
-    padding: 10px;
-    box-shadow: 0px 3px 5px 1px rgba(46, 46, 46, 0.5); 
-  }
+.about-designer {
+  flex: 30%;
+  margin: 50px 10px;
+  padding: 10px;
+  box-shadow: 0px 3px 5px 1px rgba(46, 46, 46, 0.5);
+}
 
-  .about-avatar{
-      border-radius: 50%;
-      margin: auto;
-  }
+.about-avatar {
+  border-radius: 50%;
+  margin: auto;
+}
 
-  .about-avatar img{
-      border-radius: 50%;
-      object-position: center;
-      object-fit: cover;
-      width: 2cm;
-      height: 2cm;
-      /* margin: auto; */
-      /* flex: 25%; */
-  }
+.about-avatar img {
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  width: 2cm;
+  height: 2cm;
+  /* margin: auto; */
+  /* flex: 25%; */
+}
 
-  .about-avatar-title{
-      /* flex: 75%; */
-      margin: 10px 5px;
-      text-align: center;
-      /* border: solid red 1px; */
-  }
+.about-avatar-title {
+  /* flex: 75%; */
+  margin: 10px 5px;
+  text-align: center;
+  /* border: solid red 1px; */
+}
 
-  .about-avatar-title h4{
-      font-weight: lighter;
-  }
+.about-avatar-title h4 {
+  font-weight: lighter;
+}
 
-  .about-avatar-title p{
-      font-weight: lighter;
-      /* border: solid red 1px; */
-  }
+.about-avatar-title p {
+  font-weight: lighter;
+  /* border: solid red 1px; */
+}
 
-  .about-designer-detail{
-      padding: 10px;
-      text-align: center;
-  }
+.about-designer-detail {
+  padding: 10px;
+  text-align: center;
+}

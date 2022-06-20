@@ -34,29 +34,13 @@ const Upload = () => {
     // setValue(data.target.value);
     console.log(data);
   };
-};
-
-const Order = () => {
-  // const {register,handleSubmit} = useForm();
-  // const onSubmit = data => console.log(data);
-
-  const { register, handleSubmit, setValue } = useForm();
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-
-  const onSubmit = (data) => {
-    // setValue(data.target.value);
-    console.log(data);
-  };
 
   return (
     <ThemeProvider theme={theme}>
       <div className='order-form-container'>
-        <div className='order-head'>Order</div>
+        <div className='order-head'>Upload</div>
 
-        <form>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <TextField
             {...register('title')}
             id='title'
@@ -66,7 +50,7 @@ const Order = () => {
             margin='normal'
             color='primary'
             sx={{ width: '40ch' }}
-            // onChange={handleChange}
+            onChange={handleChange}
           />
 
           <TextField
@@ -91,9 +75,16 @@ const Order = () => {
             type='password'
           />
 
-          <p>
-            we will contact you with your email after submission of this form
-          </p>
+          <label htmlFor='icon-button-file'>
+            <Input accept='image/*' id='icon-button-file' type='file' />
+            <IconButton
+              color='primary'
+              aria-label='upload picture'
+              component='span'
+            >
+              <PhotoCamera />
+            </IconButton>
+          </label>
 
           <Button
             variant='contained'
@@ -114,4 +105,4 @@ const Order = () => {
   );
 };
 
-export default Order;
+export default Upload;

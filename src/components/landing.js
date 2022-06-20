@@ -4,31 +4,28 @@ import Products from './products';
 import './landing.css';
 
 const Landing = (props) => {
-    let navigate = useNavigate();
+  let navigate = useNavigate();
 
-   
+  useEffect(() => {
+    // let authToken = sessionStorage.getItem('Auth Token');
+    let authToken = true;
 
-    useEffect(() => {
-        let authToken = sessionStorage.getItem('Auth Token')
-
-        // if (authToken) {
-        //     navigate('/')
-        // }
-
-        if (!authToken) {
-            navigate('/login')
-        }
-    }, [])
-        return(
-            <div className="top">
-                 
-                <h1>Senper Graphics</h1>
-                <h4>{props.motto}</h4>
-                <Products />
-               
-            </div>
-
-        );
+    if (authToken) {
+      navigate('/');
     }
+
+    if (!authToken) {
+      navigate('/login');
+    }
+  }, []);
+
+  return (
+    <div className='top'>
+      <h1>Senper Graphics</h1>
+      <h4>{props.motto}</h4>
+      <Products />
+    </div>
+  );
+};
 
 export default Landing;

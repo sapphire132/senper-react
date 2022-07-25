@@ -1,0 +1,72 @@
+.order-form-container {
+  border-radius: 20px;
+  /* width: 35%; */
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  /* width: min-content; */
+  background-color: transparent;
+  padding: 20px;
+  margin: 30px auto;
+  border: #474747 1px solid;
+  /* display: grid; */
+  /* align-items: center; */
+  justify-content: center;
+  /* box-shadow: 0px 3px 5px 1px rgba(46, 46, 46, 0.5); */
+}
+
+form p {
+  font-size: small;
+  color: #2462e9;
+}
+
+.login-email,
+.login-password {
+  background-color: transparent;
+  color: #474747;
+  border-top: 0ch;
+  border-left: 0ch;
+  border-right: 0ch;
+  border-color: #474747;
+  font-size: 17px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+}
+
+.login-email:hover,
+.login-password:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.order-head {
+  /* background-color: #474747; */
+  color: #474747;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* padding: 15px 3%; */
+  font-size: xx-large;
+  font-weight: lighter;
+}
+
+.order-form {
+  padding: 15px 7%;
+}
+
+.order-form-btn {
+  background-color: #464646;
+  color: white;
+  border-radius: 10px;
+  margin: 20px 0px;
+  border: none;
+  padding: 7px 30px;
+  text-align: right;
+}
+
+.oredr-desc {
+  height: 100px;
+  width: 100%;
+  margin: 15px 0px;
+  border-radius: 5px;
+  border: solid #464646 2px;
+}
